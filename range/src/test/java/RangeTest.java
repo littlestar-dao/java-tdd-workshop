@@ -71,7 +71,7 @@ public class RangeTest {
         assertEquals(5, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     หาตัวเลขสุดท้าย2() {
         MyRange range = new MyRange();
