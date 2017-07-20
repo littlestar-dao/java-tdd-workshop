@@ -17,8 +17,12 @@ public class PrimeFactor {
                 list.add(divide);
             }
         }
-        else if(number != 1 && number % 2 != 0){ //3
-            list.add(number);
+        else if(number % 3 == 0){ //3
+            list.add(3);
+            int divide1 = number/3;
+            if(divide1 >= 3){
+                list.add(divide1);
+            }
         }
         return list; //1,2
     }
