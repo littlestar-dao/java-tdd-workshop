@@ -55,7 +55,7 @@ public class RangeTest {
         assertTrue("ต้องเป็นก้ามปูปิดนะ", actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     ตรวจสอบว่าเป็น_วงเล็บปิด() {
         MyRange range = new MyRange();
