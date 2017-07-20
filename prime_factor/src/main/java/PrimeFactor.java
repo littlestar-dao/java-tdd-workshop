@@ -4,29 +4,21 @@ import java.util.List;
 public class PrimeFactor {
     public List<Integer> of(int number) {
         List<Integer> list = new ArrayList<Integer>();
-        if(number % 2 == 0){
-            list.add(2);
-            int divide = number/2;
-            if(divide % 2 == 0 && divide > 2){ //8
-                list.add(divide/2);
-                if(divide/2 == 2){
-                    list.add(2);
-                }
+        if(number % 2 == 0) {
+            while (number % 2 == 0) {
+                list.add(2);
+                number /= 2;
             }
-            else if(divide > 1){ //6, 4
-                list.add(divide);
+            if(number > 1){
+                list.add(number);
             }
         }
         else if(number % 3 == 0){ //3
-            list.add(3);
-            int divide1 = number/3;
-            if(divide1/3 >= 3){
-                list.add(divide1/3);
+            while (number % 3 == 0) {
                 list.add(3);
-            }else if(divide1 == 3){
-                list.add(divide1);
+                number /= 3;
             }
         }
-        return list; //1,2
+        return list;
     }
 }
