@@ -39,7 +39,7 @@ public class RangeTest {
         assertEquals(2, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     หาตัวเลขเริ่มต้น3() {
         MyRange range = new MyRange();

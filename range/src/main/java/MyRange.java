@@ -12,8 +12,12 @@ public class MyRange {
     }
 
     public int getFirstNumber(String input) {
+        if(isก้ามปูเปิด(input)){
+            return Character.getNumericValue(input.charAt(1));
+        }else{
+            return Character.getNumericValue(input.charAt(1))+1;
+        }
 
-        return Character.getNumericValue(input.charAt(1));
     }
 
     public boolean isก้ามปูเปิด(String input) {
