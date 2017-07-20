@@ -31,7 +31,7 @@ public class RangeTest {
         assertEquals(1, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     หาตัวเลขเริ่มต้น2() {
         MyRange range = new MyRange();
