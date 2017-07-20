@@ -63,7 +63,7 @@ public class RangeTest {
         assertFalse("ต้องเป็นวงเล็บปิดนะ", actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     หาตัวเลขสุดท้าย() {
         MyRange range = new MyRange();
