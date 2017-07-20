@@ -20,7 +20,10 @@ public class PrimeFactor {
         else if(number % 3 == 0){ //3
             list.add(3);
             int divide1 = number/3;
-            if(divide1 >= 3){
+            if(divide1/3 >= 3){
+                list.add(divide1/3);
+                list.add(3);
+            }else if(divide1 == 3){
                 list.add(divide1);
             }
         }
