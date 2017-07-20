@@ -27,7 +27,7 @@ public class FormatPhoneNumberTest {
         assertEquals("00444855558361", actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void evenPhoneNumber() {
         FormatPhoneNumber formatPhoneNumber = new FormatPhoneNumber();
         String actualResult = formatPhoneNumber.solution("555372654");
