@@ -19,18 +19,45 @@ public class FormatPhoneNumber {
         int count = 0;
         input = removeNonDigit(input);
         char[] numbers = input.toCharArray();
+        int remain = numbers.length;
 
         for(int i = 0; i < numbers.length; i++)
         {
             int value1 = Character.getNumericValue(numbers[i]);
-            if(count < 3) {
-                count++;
-                result += value1;
+            if(numbers.length % 3 == 1){
+                if(remain < 4 ){
+                    if(remain <= 2) {
+                        result += value1;
+                    }else{
+                        result += value1;
+                        result += "-";
+                        remain--;
+                    }
+                }else{
+                    if(count < 3) {
+                        count++;
+                        result += value1;
+                        remain--;
 
+                    }else{
+                        count = 1;
+                        result += "-";
+                        result += value1;
+                        remain--;
+                    }
+                }
             }else{
-                count = 1;
-                result += "-";
-                result += value1;
+                if(count < 3) {
+                    count++;
+                    result += value1;
+                    remain--;
+
+                }else{
+                    count = 1;
+                    result += "-";
+                    result += value1;
+                    remain--;
+                }
             }
         }
         return result;
