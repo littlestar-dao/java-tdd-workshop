@@ -3,12 +3,14 @@ public class FormatPhoneNumber {
     public String removeNonDigit(String input) {
         String output;
 
-        if(input.contains("-")){
+        if(input.contains("-") ){
              output = input.replace("-","");
+             if(output.contains(" ")){
+                 output = output.replace(" ", "");
+             }
         }else{
             output = input.replace(" ", "");
         }
-
         return output;
     }
 
