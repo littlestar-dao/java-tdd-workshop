@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 
 public class RangeTest {
 
-    @Test @Ignore
+    @Test
     public void
     ตรวจสอบว่าเป็น_ก้ามปูเปิด() {
         MyRange range = new MyRange();
