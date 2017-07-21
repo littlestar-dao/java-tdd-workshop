@@ -4,7 +4,7 @@ public class MyRange {
         int first = getFirstNumber(input);
         int last = getLastNumber(input);
         for (int i = first; i <= last; i++) {
-            result += i;
+                result += i;
         }
         return result;
     }
